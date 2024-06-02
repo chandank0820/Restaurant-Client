@@ -1,0 +1,84 @@
+.container {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  min-height: 80vh;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px;
+}
+
+.img_container {
+  flex: 1;
+}
+
+.image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.content {
+  flex: 2;
+  margin-left: 2rem;
+}
+
+.caption {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.description {
+  margin-bottom: 15px;
+  font-size: 1.25rem;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 1.2rem;
+  margin-right: 15px;
+  font-size: 1.75rem;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+}
+
+.star {
+  font-size: 2.25rem;
+  margin-right: 3px;
+  color: #57e32c;
+}
+
+.button {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .img_container {
+    margin-bottom: 20px;
+    justify-self: center;
+  }
+
+  .content {
+    margin-left: 0;
+    font-size: 1rem;
+  }
+}

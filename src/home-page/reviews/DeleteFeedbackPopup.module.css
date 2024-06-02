@@ -1,0 +1,56 @@
+.popup_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.popup {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.popup h2 {
+  margin-top: 0;
+}
+
+.popup_actions {
+  margin-top: 20px;
+}
+
+.delete_btn,
+.cancel_btn {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete_btn {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.delete_btn:hover {
+  background-color: #c82333;
+}
+
+.cancel_btn {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.cancel_btn:hover {
+  background-color: #5a6268;
+}

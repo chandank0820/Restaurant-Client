@@ -1,0 +1,73 @@
+/* Responsive CSS for Connect Component */
+.connectContainer {
+  padding-top: 4rem;
+}
+
+.connectSection {
+  text-align: center;
+  background-image: url("../../assets/images/input_background.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  margin: 0 5rem;
+  border-radius: 2rem;
+  height: 20rem;
+}
+
+.connectHeading {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.subscribeForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 37.5rem;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.emailInput {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  outline: none;
+  height: 2.5rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.subscribeButton {
+  padding: 0.75rem 1.25rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  height: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .connectContainer {
+    padding: 1rem 0;
+  }
+  .connectSection {
+    padding: 1rem;
+    margin: 0;
+    height: 20rem;
+    border-radius: 0;
+  }
+  .subscribeForm {
+    height: 2rem;
+  }
+  .emailInput {
+    height: 2.5rem;
+  }
+  .subscribeButton {
+    height: 2.5rem;
+  }
+}
+
+.footer {
+  margin-top: 3rem;
+  text-align: center;
+}

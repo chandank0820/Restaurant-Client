@@ -1,0 +1,170 @@
+/* Navbar container */
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #64e952;
+  padding: 1.25rem 2rem; /* 20px 32px */
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Navbar brand */
+.navbar_brand {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem; /* 10px */
+  font-size: 1.5rem; /* 24px */
+}
+
+/* Navbar icon */
+.navbar_icon {
+  font-size: 1.25rem; /* 20px */
+  background-color: #ffffff;
+  color: #37c72a;
+  border-radius: 50%;
+  padding: 0.625rem; /* 10px */
+}
+
+/* Navbar text */
+.navbar_text {
+  font-weight: bold;
+}
+
+/* Navbar links */
+.navbar_links {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem; /* 20px */
+  transition: left 0.5s ease-in-out;
+  scroll-behavior: smooth;
+}
+
+/* Navbar link */
+.navbar_link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  cursor: pointer;
+  border-bottom: 3px solid transparent; /* this will create a transparent border at the bottom */
+  transition: background-color 0.3s ease;
+}
+.navbar_link:hover {
+  border-bottom-color: #ddd;
+}
+.navbar_links .active {
+  border-bottom-color: #ddd;
+}
+/* Navbar button */
+.navbar_button {
+  padding: 0.5rem 1rem; /* 8px 16px */
+  background-color: white;
+  color: #37c72a;
+  border: none;
+  border-radius: 0.25rem; /* 4px */
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.navbar_button:hover {
+  color: #ffffff;
+  background-color: #37c72a;
+}
+/* Navbar info */
+.navbar_info {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem; /* 20px */
+}
+
+/* Navbar phone */
+.navbar_phone {
+  display: flex;
+  align-items: center;
+  gap: 0.3125rem; /* 5px */
+}
+
+/* Navbar orders */
+.navbar_orders {
+  display: flex;
+  align-items: center;
+  gap: 0.3125rem; /* 5px */
+}
+
+/* Hamburger icon */
+.navbar_toggle {
+  display: none;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 912px) {
+  .navbar {
+    gap: 0.625rem; /* 10px */
+    padding: 0.25rem 0.65rem;
+    background-color: #64e952;
+  }
+
+  .navbar_brand {
+    font-size: 1.25rem; /* 20px */
+    padding: 0.425rem;
+  }
+
+  .navbar_icon {
+    font-size: 1rem;
+    float: right;
+  }
+
+  .navbar_links {
+    top: 3.58rem;
+    flex-direction: column;
+    position: fixed;
+    right: -100%;
+    top: 3.45rem;
+    width: 80%;
+    background-color: #64e952;
+    color: #ffffff;
+    text-align: center;
+    z-index: 999;
+    transition: right 0.5s ease-in-out;
+    padding: 1.5rem;
+    border-radius: 0.25rem;
+  }
+
+  .navbar_links.open {
+    top: 3.56rem;
+    right: 0;
+    padding: 1.5rem;
+    border-radius: 0.25rem;
+  }
+
+  .navbar_button {
+    margin-top: 0.625rem; /* 10px */
+  }
+
+  .navbar_info {
+    align-items: flex-start;
+    font: 1em sans-serif;
+  }
+
+  /* Hamburger icon */
+  .navbar_toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    width: 2.5rem; /* Add a fixed width */
+    height: 2.5rem; /* Add a fixed height */
+    background-color: #ffffff;
+    color: #64e952;
+    border-radius: 50%;
+    padding: 0.425rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+}

@@ -1,0 +1,143 @@
+.container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Styles for the search bar container */
+.searchBar {
+  display: contents;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Style for the search input */
+.search {
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  border-radius: 4px 0 0 4px;
+}
+/* Style for the search button */
+.searchButton {
+  padding: 0.5rem 1rem;
+  border-radius: 0 4px 4px 0;
+}
+
+.main {
+  display: flex;
+  align-items: center; /* Vertically align the icons and cards */
+  position: relative; /* Add relative positioning to the container */
+  overflow: hidden;
+}
+
+.icon {
+  display: none; /* Hide the icons initially on smaller screens */
+  cursor: pointer; /* Add a pointer cursor to the icons */
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffffcc; /* Add a semi-transparent background for visibility */
+  padding: 0.5rem;
+  border-radius: 50%; /* Make the icons circular */
+  z-index: 2; /* Place icons above cards */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Add transitions for hover effects */
+}
+.leftIcon {
+  left: 1rem;
+}
+.rightIcon {
+  right: 1rem;
+}
+
+/* Cards Container */
+.card_container {
+  display: flex;
+  transition: transform 0.5s ease; /* Add transition for card sliding animation */
+}
+
+/* Style for active card */
+.activeCard {
+  padding: 0.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease; /* Add transitions for hover effects */
+  background-color: #fff;
+  overflow: hidden;
+  margin: 0 0.15rem;
+  transform: scale(0.9);
+}
+.activeCard:hover {
+  background-color: #f1f1f1; /* Change the background color of the active card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+  transform: scale(0.91); /* Scale up the card on hover */
+}
+/* Restyle the arrows on hover */
+.icon:hover {
+  background-color: #37c72a;
+  color: #ffffff;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+.btn button {
+  margin: 0 1rem;
+  padding: 0.5rem 0.75rem;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////// */
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 1023px) {
+  .icon {
+    display: none;
+  }
+
+  .main {
+    flex-direction: column; /* Stack the icons and cards vertically on smaller screens */
+  }
+
+  .card_container {
+    transform: translateX(0); /* Reset the transform for small screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .icon {
+    display: none;
+  }
+  .card_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 768px) {
+  .card_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card_container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .icon {
+    display: flex;
+  }
+  .btn {
+    display: none;
+  }
+}

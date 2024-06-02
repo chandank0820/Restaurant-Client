@@ -1,0 +1,115 @@
+/* Footer Section */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #383d37;
+}
+
+/* Footer Links */
+.footerLinks {
+  flex: 1;
+  padding: 1rem;
+}
+
+.footerLinks ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerLinks ul li {
+  margin: 0.5rem 0;
+}
+
+.footerLinks ul li a {
+  color: #56e742;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  transition: all 0.3s ease;
+}
+
+.footerLinks ul li a:hover {
+  color: #37c72a; /* Change color on hover */
+  padding-left: 1rem;
+}
+
+/* Contact Section */
+.contactSection {
+  flex: 1;
+  padding: 1rem;
+  color: white;
+}
+
+.contactSection h2 {
+  margin-bottom: 1rem;
+}
+
+.contactForm {
+  display: grid;
+  gap: 1rem;
+}
+
+.contactForm label {
+  font-weight: bold;
+}
+
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  outline: none;
+}
+
+.contactForm textarea {
+  resize: vertical;
+}
+
+.submitButton {
+  padding: 0.5rem 1rem;
+}
+
+.submitButton:hover {
+  background-color: #37c72a;
+}
+
+/* Copyright Text */
+.copyRight {
+  flex-basis: 100%;
+  text-align: center;
+  padding: 1rem;
+  color: #37c72a;
+  font-size: 1.25rem;
+}
+
+/* Social Links */
+.SocialLinks {
+  flex-basis: 100%;
+  text-align: center;
+  padding: 1rem;
+  color: #64e952;
+}
+
+/* Social Icons */
+.social_icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.icon {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.icon:hover {
+  background-color: #37c72a;
+  color: #ffffff;
+}

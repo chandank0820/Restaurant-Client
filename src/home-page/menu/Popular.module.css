@@ -1,0 +1,48 @@
+.Popular {
+  text-align: center; /* Center the content horizontally */
+  padding: 2rem; /* Add padding to the container */
+}
+
+/* Style for the "CUSTOMER FAVORITES" heading */
+.Popular h2 {
+  text-transform: uppercase; /* Convert text to uppercase */
+  color: red; /* Set the text color to red */
+}
+
+/* Style for the "Popular Categories" heading */
+.Popular h1 {
+  margin-top: 1rem; /* Add spacing between headings */
+}
+
+.link {
+  text-decoration: none;
+}
+/* Style for the card container */
+.Popular .card_container {
+  display: flex; /* Display cards in a row */
+  justify-content: space-around; /* Distribute cards evenly in a row */
+  flex-wrap: wrap; /* Allow cards to wrap to the next row on smaller screens */
+  gap: 1rem;
+  margin-top: 2rem; /* Add spacing between headings and cards */
+}
+
+/* Style for the PopularCard component (nested component) */
+.PopularCard {
+  text-decoration: none; /* Remove underlines from links */
+  border: 1px solid #ddd; /* Add a border for the card */
+  border-radius: 8px; /* Round the corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  padding: 1rem; /* Add some padding to the card */
+  text-align: center; /* Center the content horizontally */
+  width: calc(
+    25% - 1rem
+  ); /* Set the width for each card (4 cards per row on big screens) */
+  margin-bottom: 1rem; /* Add spacing between cards */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transitions for hover effects */
+}
+
+/* Style for card hover effect */
+.PopularCard:hover {
+  transform: scale(1.05); /* Scale up the card on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+}

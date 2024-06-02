@@ -1,0 +1,37 @@
+/* * {
+  scroll-behavior: smooth;
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #00587a;
+  --secondary-color: #008891;
+  --background-color: #e7e7de;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--background-color);
+  font-family: "Raleway", sans-serif;
+}
+
+/* You can add additional global styles here */
+button {
+  padding: 1rem 2rem;
+  background-color: #64e952;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #37c72a;
+}
